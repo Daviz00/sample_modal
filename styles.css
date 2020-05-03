@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+}
+
+.modal {
+  height: 80vh;
+  width: 900px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 0 1rem;
+  border-bottom: 1px solid #777;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.title {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  align-self: flex-end;
+  padding-top: 0.5rem;
+}
+
+.body {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 1rem;
+  font-family: "Lato", sans-serif;
+  color: rgb(216, 150, 216);
+  background-color: rgb(48, 1, 28);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  border-top: 1px solid #777;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+.footer .btn {
+  margin-right: 0.5rem;
+}
+
+.footer .btn:last-child {
+  margin-right: initial;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  font-size: inherit;
+  border-radius: 0.3em;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: #1ca;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background-color: #0a8;
+  box-shadow: 0 0 5px 0 hsl(118, 78%, 16%);
+}
+
+.btn.btn-danger {
+  background-color: #c33;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus {
+  background-color: #a11;
+  box-shadow: 0 0 5px 0 hsl(0, 72%, 15%);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: orange;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
+}
